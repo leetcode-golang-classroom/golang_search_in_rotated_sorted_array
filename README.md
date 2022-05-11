@@ -58,7 +58,7 @@ nums 是一個平移 過 k 位置的整數陣列，也就是假設原本陣列 n
 
 首先看一下下圖
 
-![shifted-array.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/df99de35-44e5-4931-a15c-51f30c2dbde7/shifted-array.png)
+![](https://i.imgur.com/SSHObxM.png)
 
 假設 shifted k 位置後， 假設給 $L = 0, R = len(nums)$, $M = (L+R)/ 2$ 
 
@@ -68,11 +68,11 @@ nums 是一個平移 過 k 位置的整數陣列，也就是假設原本陣列 n
 
 1. $target < nums[L]$
 
-![shift-left-portion-1.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5221c486-0c10-482c-a5cf-c779b7861d7c/shift-left-portion-1.png)
+![](https://i.imgur.com/yBdwe9d.png)
 
 1. $target > nums[M]$
 
-![shift-left-portion-2.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7f4bb1f8-a196-4b1b-bb1a-a65b0ffd0e9d/shift-left-portion-2.png)
+![](https://i.imgur.com/WFuitu6.png)
 
 其他當 $nums[M]$ 在左邊的狀況則需要 將 $R$  更新為 $M-1$
 
@@ -80,11 +80,11 @@ nums 是一個平移 過 k 位置的整數陣列，也就是假設原本陣列 n
 
 1. $target < nums[M]$
 
-![shift-right-portion-1.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0db5ac63-a489-48df-8931-057f111a7d1e/shift-right-portion-1.png)
+![](https://i.imgur.com/QasL81k.png)
 
-1. t$arget < nums[R]$
+1. $target < nums[R]$
 
-![shift-right-portion-2.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/693e6fda-1f21-4472-ae05-49a30cef54b2/shift-right-portion-2.png)
+![](https://i.imgur.com/xHSfNUW.png)
 
 其他當 $nums[M]$ 在右邊的狀況則需要 將 $L$ 更新為 $M+1$
 
